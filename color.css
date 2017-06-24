@@ -1,0 +1,62 @@
+html{
+  background-color:black;
+}
+
+body{
+  margin: 0% 12%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: white;
+}
+
+header{
+  display: block;
+  background-color:#ffffff;
+  margin-bottom:0.5%;
+  margin-top:-1%;
+}
+
+header a:link{
+  padding:1% 2%;
+  display:inline-block;
+  vertical-align: middle;
+  color:#d683ef;
+  text-decoration: none;
+}
+
+header a:hover{
+  background-color:#f6dbff;
+  transition: 0.5s;
+}
+
+header a:active{
+
+}
+
+header a:visited{
+  color:#d683ef;
+}
+
+.home{
+  padding:1% 2%;
+}
+
+a.home:hover{
+  background-color:#ffffff;
+  padding:1% 2%;
+}
+
+form{
+  padding:0.5%;
+  text-align:center;
+}
+
+.ask{
+  font-size:40px;
+  text-align:center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.space{
+  margin-bottom:2%;
+}

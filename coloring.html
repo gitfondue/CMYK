@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "utf-8"/>
+    <title>Coloring Page</title>
+    <link href="color.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a class="home" href=""><img src="logo.png" width="100px" height="35px"/></a>
+      <a href="">Browse</a>
+      <a href="">Upload</a>
+      <a href="">Sign in</a>
+    </header>
+
+    <p class="ask">How are you feeling?</p>
+
+    <form method="post">
+        <select name="Mood">
+                <option value="sad">Sad</option>
+                <option value="happy">Happy</option>
+                <option value="angry">Angry</option>
+                <option value="scared">Scared</option>
+                <option value="anxious">Anxious</option>
+                <option value="festive">Festive</option>
+                <option value="upset">Upset</option>
+                <option value="bored">Bored</option>
+                <option value="empty">Empty</option>
+                <option value="hopeless">Hopeless</option>
+                <option value="idk">Idk</option>
+                <option value="see_all">See All</option>
+        </select>
+    </form>
+
+    <p class="ask">What type of coloring page would you like?</p>
+
+    <form class="space" method="post">
+        <select name="Style">
+                <option value="simple">Simple</option>
+                <option value="complicated">Complicated</option>
+        </select>
+    </form>
+
+    <form method="get" action="/page2">
+        <button type="submit">Continue</button>
+    </form>
+
+    <footer></footer>
+
+  </body>
+</html>
