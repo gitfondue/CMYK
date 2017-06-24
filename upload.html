@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "utf-8"/>
+    <title>Coloring Page</title>
+    <link href="color.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <header>
+      <!--<img/>--> <!--logo-->
+      <a href="">Browse</a>
+      <a href="">Upload</a>
+      <a href=""></a>
+    </header>
+
+    <h1>Choose a coloring page to upload:</h1>
+    <form enctype="multipart/form-data" action="/upload/image" method="post">
+        <input id="image-file" type="file" />
+    </form>
+
+    <h1>Add tags to describe your coloring page:</h1>
+    <form action="">
+      <input type="checkbox" value="happy">Happy
+      <input type="checkbox" value="angry">Angry
+      <input type="checkbox" value="scared">Scared
+      <input type="checkbox" value="anxious">Anxious
+      <input type="checkbox" value="festive">Festive<br>
+      <input type="checkbox" value="upset">Upset
+      <input type="checkbox" value="bored">Bored
+      <input type="checkbox" value="empty">Empty
+      <input type="checkbox" value="hopleless">Hopeless
+      <input type="checkbox" value="idk">Idk<br>
+      <input type="checkbox" value="check_all">Check All
+    </form>
+
+    <h1>Describe the coloring page's style:</h1>
+    <form action="">
+      <input type="radio" value="simple">Simple
+      <input type="radio" value="complicated">Complicated
+    </form>
+
+    <form method="get" action="/page2">
+        <button type="submit">Submit!</button>
+    </form>
+
+    <img src=""/> <!--image header-->
+
+  </body>
+</html>
