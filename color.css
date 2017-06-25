@@ -1,11 +1,21 @@
-html{
-  background-color:black;
+html.black{
+  background-image:url("black_bg.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:white;
+}
+
+html.blue{
+  background-image:url("blue_bg.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color:white;
 }
 
 body{
   margin: 0% 12%;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   background-color: white;
 }
 
