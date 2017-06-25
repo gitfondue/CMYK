@@ -12,16 +12,17 @@ body{
 header{
   display: block;
   background-color:#ffffff;
-  margin-bottom:0.5%;
-  margin-top:-1%;
+  margin-bottom:1%;
+  margin-top:-2.5%;
 }
 
 header a:link{
-  padding:1% 2%;
+  padding:1.5% 3%;
   display:inline-block;
   vertical-align: middle;
   color:#d683ef;
   text-decoration: none;
+  font-family: 'Happy Monkey', cursive;
 }
 
 header a:hover{
@@ -38,12 +39,12 @@ header a:visited{
 }
 
 .home{
-  padding:1% 2%;
+  padding:1.5% 3%;
 }
 
 a.home:hover{
   background-color:#ffffff;
-  padding:1% 2%;
+  padding:1.5% 3%;
 }
 
 form{
@@ -58,5 +59,27 @@ form{
 }
 
 .space{
-  margin-bottom:2%;
+  padding-bottom:2%;
+}
+
+.feeling{
+  display:block;
+  margin:auto;
+  padding-bottom:3%;
+}
+
+.signin{
+
+  display:inline-block;
+  vertical-align: middle;
+}
+
+img.head{
+  max-width:100%;
+  max-height:10%;
+  margin-top:-3.2%;
+}
+
+input{
+  padding:1%;
 }
