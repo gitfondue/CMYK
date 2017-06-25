@@ -30,12 +30,14 @@ $conn = db_connect();
 
 }
 
+
 .color:hover{
  transform: scale(1.5, 1.25);
- -moz-transform: scale(1.5, 1.25);
+/* -moz-transform: scale(1.5, 1.25);
 -ms-transform: scale(1.5, 1.25);
 -webkit-transform: scale(1.5, 1.25);
--o-transform: scale(1.5, 1.25);
+-o-transform: scale(1.5, 1.25);*/
+transition:0.5s;
 }
     </style>
   </head>
@@ -146,7 +148,7 @@ if ($_POST){
 
         imagedestroy($source);
 
-        echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
+        echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
           echo "<center>".$title." by ".$by."</center></div>";
 
       }
