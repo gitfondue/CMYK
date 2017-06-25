@@ -23,12 +23,18 @@ $conn = db_connect();
 
 }
 
+/*.color:link{
+  transition:1s;
+  transform:none;
+}*/
+
 .color:hover{
  transform: scale(1.5, 1.25);
- -moz-transform: scale(1.5, 1.25);
+/* -moz-transform: scale(1.5, 1.25);
 -ms-transform: scale(1.5, 1.25);
 -webkit-transform: scale(1.5, 1.25);
--o-transform: scale(1.5, 1.25);
+-o-transform: scale(1.5, 1.25);*/
+transition:0.5s;
 }
 
     </style>
