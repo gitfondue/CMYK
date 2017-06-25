@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="black" lang="en">
   <head>
     <meta charset = "utf-8"/>
-    <title>Coloring Page</title>
+    <title>CMYK</title>
     <link href="color.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
   </head>
   <body>
-
     <header>
-      <!--<img/>--> <!--logo-->
+      <a class="home" href="coloring.html"><img src="cmyk.png" width="100px" height="60px"/></a>
       <a href="">Browse</a>
-      <a href="">Upload</a>
-      <a href=""></a>
+      <a href="upload.html">Upload</a>
+      <a class="signin" href="login.html">Sign in</a>
     </header>
+
+    <img class="head" src="header.png"/>
+
+    <!--<p class="ask">How are you feeling?</p>-->
+
+    <img class="feeling" src="front-page.gif" width="400" height="400" alt="How are you feeling today?"/>
 
     <form method="post">
         <select name="Mood">
@@ -31,18 +38,18 @@
         </select>
     </form>
 
-    <form method="post">
+    <p class="ask">What type of coloring page would you like?</p>
+
+    <form class="space" method="post">
         <select name="Style">
                 <option value="simple">Simple</option>
                 <option value="complicated">Complicated</option>
         </select>
     </form>
 
-    <form method="get" action="/page2">
+    <form class="space" method="get" action="/page2">
         <button type="submit">Continue</button>
     </form>
-
-    <img src=""/> <!--image header-->
 
   </body>
 </html>
