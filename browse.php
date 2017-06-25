@@ -8,7 +8,7 @@ $conn = db_connect();
 <html class="black" lang="en">
   <head>
     <meta charset = "utf-8"/>
-    <title>CMYKj</title>
+    <title>CMYK</title>
     <link href="color.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
@@ -44,6 +44,8 @@ transition:0.5s;
       <a class="home" href="coloring.php"><img src="logo.png" width="100px" height="60px"/></a>
       <a href="browse.php">Browse</a>
       <a href="upload.php">Upload</a>
+      <a href="about.html">About</a>
+
 
       <?php
            if (isset($_SESSION['name'])){
@@ -101,7 +103,7 @@ transition:0.5s;
 
       imagedestroy($source);
       echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
-            echo "<center class='caption'>".$title." by ".$by."</center></div>";
+            echo "<center class='caption'>".$title." by <a href = 'profile.php'>".$by."</a></center></div>";
 
         }
 

@@ -49,6 +49,8 @@
         <a class="home" href="coloring.php"><img src="logo.png" width="100px" height="60px"/></a>
         <a href="browse.php">Browse</a>
         <a href="upload.php">Upload</a>
+        <a href="about.html">About</a>
+
 
         <?php
 

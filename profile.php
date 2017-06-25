@@ -31,6 +31,8 @@ $conn = db_connect();
       <a href="about.php">About</a>
       <a href="browse.php">Browse</a>
       <a href="upload.php">Upload</a>
+      <a href="about.html">About</a>
+
       <a class="signin" href="login.html">Sign in</a>
     </header>
 

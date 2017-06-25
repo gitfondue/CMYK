@@ -46,6 +46,8 @@ transition:0.5s;
       <a class="home" href="coloring.php"><img src="logo.png" width="100px" height="60px"/></a>
       <a href="browse.php">Browse</a>
       <a href="upload.php">Upload</a>
+      <a href="about.html">About</a>
+
 
       <?php
 
@@ -149,7 +151,7 @@ if ($_POST){
         imagedestroy($source);
 
         echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
-          echo "<center>".$title." by ".$by."</center></div>";
+        echo "<center class='caption'>".$title." by <a href = 'profile.php'>".$by."</a></center></div>";
 
       }
 
@@ -200,7 +202,7 @@ if ($_POST){
           imagedestroy($source);
 
           echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
-            echo "<center>".$title." by ".$by."</center></div>";
+          echo "<center class='caption'>".$title." by <a href = 'profile.php'>".$by."</a></center></div>";
 
         }
 
