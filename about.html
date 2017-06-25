@@ -6,13 +6,40 @@
     <link href="color.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+
+    <style>
+
+.block {
+
+  float: left;
+  padding-left: 50px;
+
+  width: 700px;
+
+
+}
+
+body {
+
+  font-family: 'Roboto Slab', serif;
+
+}
+
+.wrapper {
+
+  background-color: white;
+
+  height: 1200px;
+}
+    </style>
   </head>
   <body>
     <header>
-      <a class="home" href="coloring.html"><img src="cmyk.png" width="100px" height="60px"/></a>
-      <a href="">Browse</a>
-      <a href="upload.html">Upload</a>
-      <a class="signin" href="login.html">Sign in</a>
+      <a class="home" href="coloring.php"><img src="logo.png" width="100px" height="60px"/></a>
+      <a href="browse.php">Browse</a>
+      <a href="upload.php">Upload</a>
     </header>
 
     <img class="head" src="header.png"/>
@@ -30,28 +57,44 @@
     <p class="ask">What is CMYK's Purpose?</p>
 
     <p>We provided this coloring page database as a means for people to have easy access to somewhere they can express and vent their emotions: through destressing by coloring. Many people of all ages still have trouble finding somewhere or an activity to follow to destress, which can result in many mental health problems like high stress or insomnia. We want to reach out to these people through artistic expression and quick online access and hope they can find a equilibrium with their feelings amd emotions.
-
-    We also opened the option to upload pictures to our website as a way to let people help each other in destressing and support each other through rough times.</p>
+    We also opened the option to upload pictures to our website as a way to let people help each other in destressing and support each other through rough times. Our ultimate goal is to provide a relaxing, therapeutic experience for the stressed individual with a unique combination of technology and humanity, hence our domain name.
+</p>
 
     <p class="ask">The Creators</p>
 
-    <img class="head" src="designs/violafon.png"/>
+<div class = "wrapper">
+  <p class="ask">Fonda</p>
 
-    <p class="ask">Fonda</p>
+    <img class="head" src="designs/violafon.png" float = 'left'/>
+
+    <div class = "block">
 
     <p>A rising Junior at the University of Maryland, College Park. She is currently a Computer Science major pursuing a Cybersecurity career. She contributed to a bit of the front end pages and drew the design and pictures of the website using Adobe Photoshop.</p>
 
-    <img class="head" src="designs/ibdyl.png"/>
+</div>
 
-    <p class="ask">Dyllis</p>
+<p class="ask">Dyllis</p>
+
+
+    <div class = "block">
 
     <p>A rising Sophomore at the University of Maryland, College Park. She is currently a Mathematics major. She contributed to the front end of the website using HTML and CSS and helped with its styling and format.</p>
 
-    <img class="head" src="designs/aoonilindsay.png"/>
+</div>
 
-    <p class="ask">Lindsay</p>
+<img class="head" src="designs/ibdyl.png" float = 'left'/>
+
+
+<p class="ask">Lindsay</p>
+
+    <img class="head" src="designs/aoonilindsay.png" float = 'left'/>
+
+    <div class = "block">
 
     <p>A rising Freshman at the University of Maryland, College Park. She will be a Computer Science major. She contributed to the back end of the website using PHP.</p>
 
+</div>
+
+</div>
   </body>
 </html>
