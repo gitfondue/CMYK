@@ -16,18 +16,6 @@ $conn = db_connect();
 
     <style>
 
-.page {
-
-  padding: 25px 50px 15px 55px;
-  float: left;
-
-}
-
-/*.color:link{
-  transition:1s;
-  transform:none;
-}*/
-
 .color:hover{
  transform: scale(1.5, 1.25);
 /* -moz-transform: scale(1.5, 1.25);
@@ -64,6 +52,8 @@ transition:0.5s;
 
     <img class="head" src="header.png"/>
 
+
+
     <!--<p class="ask">How are you feeling?</p>-->
 <?php
 
@@ -83,7 +73,7 @@ transition:0.5s;
 
        if ($result -> num_rows != 0){
 
-         echo "<h1> $tables[$i] </h1>";
+         echo "<center><h1> $tables[$i] </h1></center>";
 
         while ($row = $result->fetch_object())
         {
@@ -102,12 +92,12 @@ transition:0.5s;
           $newHeight = (200/$width) * $height;
 
       imagedestroy($source);
-      echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
+      echo "<center><div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></center></a><br/>";
             echo "<center class='caption'>".$title." by <a href = 'profile.php'>".$by."</a></center></div>";
 
         }
 
-        echo "</br></br></br></br></br></br></br>";
+        echo "</br>";
 
       }
 

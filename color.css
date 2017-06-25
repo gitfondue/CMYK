@@ -68,6 +68,11 @@ form{
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+h1{
+  font-family: 'Yanone Kaffeesatz',sans-serif;
+  padding-left:5%;
+}
+
 .space{
   padding-bottom:2%;
 }
@@ -92,4 +97,8 @@ img.head{
 
 input{
   padding:1%;
+}
+
+.caption{
+  font-family: 'IM Fell Great Primer SC', serif;
 }
