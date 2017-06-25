@@ -1,3 +1,4 @@
+
 <?php
   session_start();
 require_once('backend-login.php');
@@ -7,7 +8,7 @@ $conn = db_connect();
 <html class="black" lang="en">
   <head>
     <meta charset = "utf-8"/>
-    <title>CMYKj</title>
+    <title>CMYK</title>
     <link href="color.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Happy+Monkey" rel="stylesheet">
@@ -27,6 +28,14 @@ $conn = db_connect();
 
   height: 300px;
 
+}
+
+.color:hover{
+ transform: scale(1.5, 1.25);
+ -moz-transform: scale(1.5, 1.25);
+-ms-transform: scale(1.5, 1.25);
+-webkit-transform: scale(1.5, 1.25);
+-o-transform: scale(1.5, 1.25);
 }
     </style>
   </head>
@@ -137,7 +146,7 @@ if ($_POST){
 
         imagedestroy($source);
 
-        echo "<div class = 'page'><img src = 'colorings/$pic' width = '200px' height = '$newHeight'/><br/>";
+        echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
           echo "<center>".$title." by ".$by."</center></div>";
 
       }
@@ -188,7 +197,7 @@ if ($_POST){
 
           imagedestroy($source);
 
-          echo "<div class = 'page'><img src = 'colorings/$pic' width = '200px' height = '$newHeight'/><br/>";
+          echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
             echo "<center>".$title." by ".$by."</center></div>";
 
         }

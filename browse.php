@@ -23,6 +23,14 @@ $conn = db_connect();
 
 }
 
+.color:hover{
+ transform: scale(1.5, 1.25);
+ -moz-transform: scale(1.5, 1.25);
+-ms-transform: scale(1.5, 1.25);
+-webkit-transform: scale(1.5, 1.25);
+-o-transform: scale(1.5, 1.25);
+}
+
     </style>
   </head>
   <body>
@@ -50,7 +58,6 @@ $conn = db_connect();
 
     <!--<p class="ask">How are you feeling?</p>-->
 <?php
-
 
     $tables=array("angry", "anxious", "happy", "sad","scared", "festive", "upset", "empty", "bored", "hopeless", "idk");
     $types = array ("complicated", "simple");
@@ -86,9 +93,8 @@ $conn = db_connect();
           $height = imagesy($source);
           $newHeight = (200/$width) * $height;
 
-          imagedestroy($source);
-
-          echo "<div class = 'page'><img src = 'colorings/$pic' width = '200px' height = '$newHeight'/><br/>";
+      imagedestroy($source);
+      echo "<div class = 'page'><a href = 'colorings/$pic' target='_blank'><img class = 'color' src = 'colorings/$pic' width = '200px' height = '$newHeight'/></a><br/>";
             echo "<center class='caption'>".$title." by ".$by."</center></div>";
 
         }
